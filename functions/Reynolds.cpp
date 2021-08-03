@@ -25,7 +25,7 @@ int main ()
  
 	//calculate Re
 	cout << "the Re number is " << endl;
-	Re =  Reynolds_calc(rho,U,D,mu);
+	Re =  Reynolds_calc(rho,U,D,mu);//主函数调用子函数
 	cout << Re << endl;
 
 	return 0;
@@ -37,7 +37,7 @@ double Reynolds_calc(double rho, double U, double D, double mu)
 {
 	double Re;
 	Re = rho*U*D/mu;
-	return Re;
+	return Re;//返回主调函数的处理结果
 }
 
 
